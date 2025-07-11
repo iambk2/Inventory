@@ -1,0 +1,37 @@
+/* App.css */
+:root {
+  --font-primary: 'Inter', sans-serif;
+  /* Alternative: --font-primary: 'Poppins', sans-serif; */
+  --color-primary: #C83DF4;
+}
+
+body {
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+/* Buttons */
+button, .btn {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  border-radius: 0.375rem;
+}

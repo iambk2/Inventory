@@ -1,0 +1,43 @@
+.contact-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #7a5cf3, #8b4be2);
+}
+
+.contact-container {
+  max-width: 1000px;
+}
+
+.text-purple {
+  color: #7a5cf3;
+}
+
+.contact-image {
+  max-width: 300px;
+}
+
+.btn-purple {
+  background-color: #7a5cf3;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.btn-purple:hover {
+  background-color: #6335c5;
+}
+
+.mail{
+  text-decoration: none;
+}
+/* Contact.css */
+.invalid-feedback {
+  color: red;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 767px) {
+  .contact-image {
+    max-width: 200px;
+  }
+}

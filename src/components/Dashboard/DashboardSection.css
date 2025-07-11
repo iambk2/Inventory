@@ -1,0 +1,118 @@
+/* === Floating Circles === */
+.floating-bg-circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floating-bg-circles span {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  animation: float 20s linear infinite;
+}
+
+.floating-bg-circles span:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.floating-bg-circles span:nth-child(2) {
+  left: 30%;
+  animation-delay: 5s;
+  animation-duration: 22s;
+}
+
+.floating-bg-circles span:nth-child(3) {
+  left: 50%;
+  animation-delay: 2s;
+  animation-duration: 20s;
+}
+
+.floating-bg-circles span:nth-child(4) {
+  left: 70%;
+  animation-delay: 8s;
+  animation-duration: 24s;
+}
+
+.floating-bg-circles span:nth-child(5) {
+  left: 90%;
+  animation-delay: 3s;
+  animation-duration: 26s;
+}
+
+@keyframes float {
+  0% {
+    top: 100%;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    top: -10%;
+    transform: translateY(-100%) scale(1.2);
+  }
+}
+
+.dashboard-section {
+  margin-top: 0px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1;
+  /* background: linear-gradient(-45deg, #cfa5db, #f1ebef, #e9daf1); */
+  background-color: #0d070f;
+  background-size: 400% 400%;
+  animation: gradientShift 5s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  margin-bottom: -120px;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-image {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-image:hover {
+  transform: scale(1.01);
+}
+
+.red-section {
+  /* background-color: #c83df4; */
+  background-color: #0d070f;
+  padding-top: 140px;
+  padding-bottom: 60px;
+  z-index: 0;
+  position: relative;
+}
+
+.red-section h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}

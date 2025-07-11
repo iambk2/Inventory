@@ -1,0 +1,159 @@
+/* Main Container */
+.pricing-container {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header */
+.pricing-header {
+  margin-bottom: 3rem;
+}
+
+.pricing-header h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Pricing Grid */
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Pricing Card */
+.pricing-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 250px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  border: 1px solid #eaeaea;
+  transition: all 0.3s ease;
+}
+
+.pricing-card.popular {
+  border-color: #C83DF4;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Popular Badge */
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #C83DF4;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Plan Name */
+.plan-name {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+/* Price */
+.price {
+  margin-bottom: 2rem;
+}
+
+.price span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.price span:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.price span:nth-child(3) {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.price small {
+  display: block;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.cta-button {
+  width: 100%;
+  padding: 12px;
+  background: #C83DF4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.cta-button:hover {
+  background: #AE30D6;
+  transform: translateY(-2px);
+}
+
+.demo-button {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  color: #C83DF4;
+  border: 1px solid #C83DF4;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.demo-button:hover {
+  background: #F8E9FF;
+}
+
+/* Footer Note */
+.footer-note {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.footer-note a {
+  color: #C83DF4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-note a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .pricing-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricing-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}

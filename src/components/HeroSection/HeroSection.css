@@ -1,0 +1,71 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e8e3f1, #f8f9fa);
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+/* Purple-glow background element */
+.hero-blur-bg {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #c83df4 0%, transparent 70%);
+  opacity: 0.4;
+  filter: blur(100px);
+  z-index: 1;
+}
+
+/* Button Styles */
+.custom-purple-btn {
+  background-color: #C83DF4;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-purple-btn:hover {
+  background-color: #a52ad1;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  color: #C83DF4;
+  border: 2px solid #C83DF4;
+  background-color: transparent;
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline:hover {
+  background-color: #C83DF4;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Scroll indicator (optional if needed) */
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  animation: bounce 2s infinite;
+  z-index: 3;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
